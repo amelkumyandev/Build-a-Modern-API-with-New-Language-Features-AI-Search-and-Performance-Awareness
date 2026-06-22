@@ -1,0 +1,12 @@
+[
+  {
+    "question": "How does the platform use pgvector for local semantic search?",
+    "expectedAnswerKeywords": ["pgvector", "embedding", "cosine"],
+    "expectedDocumentTitles": ["pgvector HNSW Index Operations"]
+  },
+  {
+    "question": "Why should agent answers include citations?",
+    "expectedAnswerKeywords": ["citations", "retrieved", "grounded"],
+    "expectedDocumentTitles": ["Agent Citation Policy"]
+  }
+]

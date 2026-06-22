@@ -1,0 +1,343 @@
+{"kind":"deck","id":"pr/4ftarx","name":"Deck"}
+{"kind":"layout","layoutId":"f7f2733f-06b8-4b1d-a9a6-659b334fb6a1","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"1db17151-1d07-4011-af3a-c2048d4aa0a4","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/znlkem","slide":1,"title":"LOCAL KNOWLEDGE INTELLIGENCE","textShapes":7}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":1,"text":"LOCAL KNOWLEDGE INTELLIGENCE","textPreview":"LOCAL KNOWLEDGE INTELLIGENCE","textChars":28,"textLines":1,"bbox":[54,56,450,28]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":1,"text":".NET 10 | C# 14 | AI Search | pgvector","textPreview":".NET 10 | C# 14 | AI Search | pgvector","textChars":38,"textLines":1,"bbox":[740,56,486,28]}
+{"kind":"textbox","id":"sh/9knih4by","slide":1,"text":"Local Knowledge\nIntelligence Agent Platform","textPreview":"Local Knowledge | Intelligence Agent Platform","textChars":43,"textLines":2,"bbox":[54,245,820,160]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":1,"text":"Project goals, architecture, document ingestion, chunking, search, ranking, grounded agent workflow, and modern .NET/C# features.","textPreview":"Project goals, architecture, document ingestion, chunking, search, ranking, grounded agent workflow, and modern .NET/C# features.","textChars":129,"textLines":1,"bbox":[54,455,720,82]}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":1,"text":"Private docs\n+\nEmbeddings\n+\nHybrid search\n+\nCited answers","textPreview":"Private docs | + | Embeddings | + | Hybrid search | + | Cited answers","textChars":57,"textLines":7,"bbox":[890,240,270,270]}
+{"kind":"textbox","id":"sh/kb6xkf6d","slide":1,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":1,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"notes","id":"nt/znlkem","slide":1,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/b81htt","slide":2,"title":"Project goals","textShapes":19}
+{"kind":"textbox","id":"sh/rqd4vmtw","slide":2,"text":"Project goals","textPreview":"Project goals","textChars":13,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/kb6xkf6d","slide":2,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/9w3m94fu","slide":2,"text":"What this platform is designed to prove and deliver.","textPreview":"What this platform is designed to prove and deliver.","textChars":52,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":2,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":2,"text":"Goal","textPreview":"Goal","textChars":4,"textLines":1,"bbox":[54,220,257.84,46]}
+{"kind":"textbox","id":"sh/9knih4by","slide":2,"text":"What it means for users","textPreview":"What it means for users","textChars":23,"textLines":1,"bbox":[311.84,220,468.8,46]}
+{"kind":"textbox","id":"sh/2p8nqxs7","slide":2,"text":"Engineering outcome","textPreview":"Engineering outcome","textChars":19,"textLines":1,"bbox":[780.64,220,445.36,46]}
+{"kind":"textbox","id":"sh/ra5gbq1o","slide":2,"text":"Private knowledge","textPreview":"Private knowledge","textChars":17,"textLines":1,"bbox":[54,266,257.84,78.5]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":2,"text":"Upload or create local source material and keep answers grounded in that corpus.","textPreview":"Upload or create local source material and keep answers grounded in that corpus.","textChars":80,"textLines":1,"bbox":[311.84,266,468.8,78.5]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":2,"text":"Documents, chunks, vectors, and citations are stored locally in PostgreSQL.","textPreview":"Documents, chunks, vectors, and citations are stored locally in PostgreSQL.","textChars":75,"textLines":1,"bbox":[780.64,266,445.36,78.5]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":2,"text":"Useful AI search","textPreview":"Useful AI search","textChars":16,"textLines":1,"bbox":[54,344.5,257.84,78.5]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":2,"text":"Find relevant material with exact terms, meaning-based search, or a balanced hybrid mode.","textPreview":"Find relevant material with exact terms, meaning-based search, or a balanced hybrid mode.","textChars":89,"textLines":1,"bbox":[311.84,344.5,468.8,78.5]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":2,"text":"Keyword, semantic, and hybrid endpoints share typed contracts.","textPreview":"Keyword, semantic, and hybrid endpoints share typed contracts.","textChars":62,"textLines":1,"bbox":[780.64,344.5,445.36,78.5]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":2,"text":"Trustworthy agent","textPreview":"Trustworthy agent","textChars":17,"textLines":1,"bbox":[54,423,257.84,78.5]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":2,"text":"Ask questions and see the chunks used to answer.","textPreview":"Ask questions and see the chunks used to answer.","textChars":48,"textLines":1,"bbox":[311.84,423,468.8,78.5]}
+{"kind":"textbox","id":"sh/sji5snel","slide":2,"text":"Agent runs persist retrieval, answer, and citation steps.","textPreview":"Agent runs persist retrieval, answer, and citation steps.","textChars":57,"textLines":1,"bbox":[780.64,423,445.36,78.5]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":2,"text":"Production shape","textPreview":"Production shape","textChars":16,"textLines":1,"bbox":[54,501.5,257.84,78.5]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":2,"text":"Operate the app with auth, health checks, Swagger, and tests.","textPreview":"Operate the app with auth, health checks, Swagger, and tests.","textChars":61,"textLines":1,"bbox":[311.84,501.5,468.8,78.5]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":2,"text":"Layered .NET architecture with DI, validation, ProblemDetails, and smoke tests.","textPreview":"Layered .NET architecture with DI, validation, ProblemDetails, and smoke tests.","textChars":79,"textLines":1,"bbox":[780.64,501.5,445.36,78.5]}
+{"kind":"notes","id":"nt/b81htt","slide":2,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/0qjchc","slide":3,"title":"Capability map","textShapes":9}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":3,"text":"Capability map","textPreview":"Capability map","textChars":14,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":3,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/bulwval8","slide":3,"text":"The app is a full local RAG platform, not only a chat demo.","textPreview":"The app is a full local RAG platform, not only a chat demo.","textChars":59,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/032lszqt","slide":3,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/tovahoza","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":3,"text":"Admin UI\n\nDashboard, documents, upload, search, agent, evaluation, settings","textPreview":"Admin UI |  | Dashboard, documents, upload, search, agent, evaluation, settings","textChars":75,"textLines":3,"bbox":[54,236,258,258]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":3,"text":"Documents\n\nCreate, upload, update, delete, chunk, embed, re-index","textPreview":"Documents |  | Create, upload, update, delete, chunk, embed, re-index","textChars":65,"textLines":3,"bbox":[348,236,258,258]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":3,"text":"Search\n\nKeyword, semantic, hybrid, scores, matched fields, source links","textPreview":"Search |  | Keyword, semantic, hybrid, scores, matched fields, source links","textChars":71,"textLines":3,"bbox":[642,236,258,258]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":3,"text":"Agent\n\nGrounded answers, citations, sessions, run-step inspection","textPreview":"Agent |  | Grounded answers, citations, sessions, run-step inspection","textChars":65,"textLines":3,"bbox":[936,236,258,258]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":3,"text":"Each capability feeds the next: source material becomes chunks, chunks become vectors, retrieval becomes cited answers, and evaluation closes the loop.","textPreview":"Each capability feeds the next: source material becomes chunks, chunks become vectors, retrieval becomes cited answers, and evaluation cl...","textChars":151,"textLines":1,"bbox":[150,550,980,54]}
+{"kind":"notes","id":"nt/0qjchc","slide":3,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/pybc51","slide":4,"title":"Solution architecture","textShapes":10}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":4,"text":"Solution architecture","textPreview":"Solution architecture","textChars":21,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":4,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":4,"text":"A layered modular monolith keeps the API thin and isolates infrastructure.","textPreview":"A layered modular monolith keeps the API thin and isolates infrastructure.","textChars":74,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":4,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":4,"text":"Next.js admin frontend\nTyped REST calls, auth token storage, smoke-tested routes","textPreview":"Next.js admin frontend | Typed REST calls, auth token storage, smoke-tested routes","textChars":80,"textLines":2,"bbox":[92,206,650,56]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":4,"text":"ASP.NET Core API\nJWT validation, Swagger/OpenAPI, CORS, health checks, Minimal API groups","textPreview":"ASP.NET Core API | JWT validation, Swagger/OpenAPI, CORS, health checks, Minimal API groups","textChars":89,"textLines":2,"bbox":[92,280,650,56]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":4,"text":"Application\nUse cases, validation, chunking, search scoring, agent and evaluation orchestration","textPreview":"Application | Use cases, validation, chunking, search scoring, agent and evaluation orchestration","textChars":95,"textLines":2,"bbox":[92,354,650,56]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":4,"text":"Domain + Contracts\nEntities, enums, DTO records, citations, evaluation results","textPreview":"Domain + Contracts | Entities, enums, DTO records, citations, evaluation results","textChars":78,"textLines":2,"bbox":[92,428,650,56]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":4,"text":"Infrastructure\nEF Core, PostgreSQL/pgvector, OpenAI clients, JWT issuing, migrations","textPreview":"Infrastructure | EF Core, PostgreSQL/pgvector, OpenAI clients, JWT issuing, migrations","textChars":84,"textLines":2,"bbox":[92,502,650,56]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":4,"text":"Boundary rule\n\nDomain and contracts do not reference infrastructure. Application services depend on interfaces, while repositories and external clients live in Infrastructure.","textPreview":"Boundary rule |  | Domain and contracts do not reference infrastructure. Application services depend on interfaces, while repositories an...","textChars":175,"textLines":3,"bbox":[810,230,330,250]}
+{"kind":"notes","id":"nt/pybc51","slide":4,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/kbj2nx","slide":5,"title":"End-to-end project workflow","textShapes":32}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":5,"text":"End-to-end project workflow","textPreview":"End-to-end project workflow","textChars":27,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/4r65wjud","slide":5,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":5,"text":"From local source material to cited AI answers.","textPreview":"From local source material to cited AI answers.","textChars":47,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":5,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":5,"text":"Login","textPreview":"Login","textChars":5,"textLines":1,"bbox":[54,246,109.14,78]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":5,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[185.14,269,24,34]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":5,"text":"Create\nor upload","textPreview":"Create | or upload","textChars":16,"textLines":2,"bbox":[231.14,246,109.14,78]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":5,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[362.29,269,24,34]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":5,"text":"Chunk","textPreview":"Chunk","textChars":5,"textLines":1,"bbox":[408.29,246,109.14,78]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":5,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[539.43,269,24,34]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":5,"text":"Embed","textPreview":"Embed","textChars":5,"textLines":1,"bbox":[585.43,246,109.14,78]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":5,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[716.57,269,24,34]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":5,"text":"Search","textPreview":"Search","textChars":6,"textLines":1,"bbox":[762.57,246,109.14,78]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":5,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[893.71,269,24,34]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":5,"text":"Agent\nanswer","textPreview":"Agent | answer","textChars":12,"textLines":2,"bbox":[939.71,246,109.14,78]}
+{"kind":"textbox","id":"sh/4r65wjud","slide":5,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[1070.86,269,24,34]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":5,"text":"Evaluate","textPreview":"Evaluate","textChars":8,"textLines":1,"bbox":[1116.86,246,109.14,78]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":5,"text":"Stage","textPreview":"Stage","textChars":5,"textLines":1,"bbox":[54,390,210.96,46]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":5,"text":"Main responsibility","textPreview":"Main responsibility","textChars":19,"textLines":1,"bbox":[264.96,390,562.56,46]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":5,"text":"User-visible output","textPreview":"User-visible output","textChars":19,"textLines":1,"bbox":[827.52,390,398.48,46]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":5,"text":"Ingestion","textPreview":"Ingestion","textChars":9,"textLines":1,"bbox":[54,436,210.96,43.5]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":5,"text":"Validate document title, content, tags, metadata, and uploaded file properties.","textPreview":"Validate document title, content, tags, metadata, and uploaded file properties.","textChars":79,"textLines":1,"bbox":[264.96,436,562.56,43.5]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":5,"text":"Document appears in the admin document list.","textPreview":"Document appears in the admin document list.","textChars":44,"textLines":1,"bbox":[827.52,436,398.48,43.5]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":5,"text":"Indexing","textPreview":"Indexing","textChars":8,"textLines":1,"bbox":[54,479.5,210.96,43.5]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":5,"text":"Replace chunks, generate missing embeddings, and store vector metadata.","textPreview":"Replace chunks, generate missing embeddings, and store vector metadata.","textChars":71,"textLines":1,"bbox":[264.96,479.5,562.56,43.5]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":5,"text":"Chunking and embedding statuses become visible.","textPreview":"Chunking and embedding statuses become visible.","textChars":47,"textLines":1,"bbox":[827.52,479.5,398.48,43.5]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":5,"text":"Retrieval","textPreview":"Retrieval","textChars":9,"textLines":1,"bbox":[54,523,210.96,43.5]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":5,"text":"Run keyword, semantic, or hybrid search with score breakdown.","textPreview":"Run keyword, semantic, or hybrid search with score breakdown.","textChars":61,"textLines":1,"bbox":[264.96,523,562.56,43.5]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":5,"text":"Ranked chunks and source-document links.","textPreview":"Ranked chunks and source-document links.","textChars":40,"textLines":1,"bbox":[827.52,523,398.48,43.5]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":5,"text":"Answering","textPreview":"Answering","textChars":9,"textLines":1,"bbox":[54,566.5,210.96,43.5]}
+{"kind":"textbox","id":"sh/val87ed8","slide":5,"text":"Build a grounded prompt from retrieved chunks and return citations.","textPreview":"Build a grounded prompt from retrieved chunks and return citations.","textChars":67,"textLines":1,"bbox":[264.96,566.5,562.56,43.5]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":5,"text":"Answer, citations, run steps, and evaluation feedback.","textPreview":"Answer, citations, run steps, and evaluation feedback.","textChars":54,"textLines":1,"bbox":[827.52,566.5,398.48,43.5]}
+{"kind":"notes","id":"nt/kbj2nx","slide":5,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/rs80ci","slide":6,"title":"Document ingestion and upload","textShapes":15}
+{"kind":"textbox","id":"sh/fyxobm58","slide":6,"text":"Document ingestion and upload","textPreview":"Document ingestion and upload","textChars":29,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":6,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":6,"text":"The UI supports both manual entry and file upload into the same validated pipeline.","textPreview":"The UI supports both manual entry and file upload into the same validated pipeline.","textChars":83,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":6,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":6,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":6,"text":"Manual document creation\n\nUsers enter title, content, tags, and metadata JSON. The same form can save only or save and embed immediately using POST /api/documents?index=true.","textPreview":"Manual document creation |  | Users enter title, content, tags, and metadata JSON. The same form can save only or save and embed immediat...","textChars":174,"textLines":3,"bbox":[54,218,552,300]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":6,"text":"File upload\n\nUsers upload UTF-8 text-like files: .txt, .md, .markdown, .json, .csv, and .log. The upload endpoint creates a normal document and records file metadata.","textPreview":"File upload |  | Users upload UTF-8 text-like files: .txt, .md, .markdown, .json, .csv, and .log. The upload endpoint creates a normal do...","textChars":166,"textLines":3,"bbox":[674,218,552,300]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":6,"text":"Validate\nform/file","textPreview":"Validate | form/file","textChars":18,"textLines":2,"bbox":[120,570,153.6,58]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":6,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[295.6,583,24,34]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":6,"text":"Create\ndocument","textPreview":"Create | document","textChars":15,"textLines":2,"bbox":[341.6,570,153.6,58]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":6,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[517.2,583,24,34]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":6,"text":"Optional\nchunk","textPreview":"Optional | chunk","textChars":14,"textLines":2,"bbox":[563.2,570,153.6,58]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":6,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[738.8,583,24,34]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":6,"text":"Optional\nembed","textPreview":"Optional | embed","textChars":14,"textLines":2,"bbox":[784.8,570,153.6,58]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":6,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[960.4,583,24,34]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":6,"text":"Open\ndetail","textPreview":"Open | detail","textChars":11,"textLines":2,"bbox":[1006.4,570,153.6,58]}
+{"kind":"notes","id":"nt/rs80ci","slide":6,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/2iaqle","slide":7,"title":"How documents become chunks","textShapes":9}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":7,"text":"How documents become chunks","textPreview":"How documents become chunks","textChars":27,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/lwval87e","slide":7,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":7,"text":"Chunking is deterministic, paragraph-aware, and repeatable for search debugging.","textPreview":"Chunking is deterministic, paragraph-aware, and repeatable for search debugging.","textChars":80,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":7,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":7,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":7,"text":"1. Split\n\nContent is split on blank-line paragraph boundaries where possible.","textPreview":"1. Split |  | Content is split on blank-line paragraph boundaries where possible.","textChars":77,"textLines":3,"bbox":[54,230,250,250]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":7,"text":"2. Estimate\n\nToken estimate uses ceiling(text length / 4) for predictable local chunk sizing.","textPreview":"2. Estimate |  | Token estimate uses ceiling(text length / 4) for predictable local chunk sizing.","textChars":93,"textLines":3,"bbox":[350,230,250,250]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":7,"text":"3. Fill\n\nParagraphs are added until target token count would be exceeded.","textPreview":"3. Fill |  | Paragraphs are added until target token count would be exceeded.","textChars":73,"textLines":3,"bbox":[646,230,250,250]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":7,"text":"4. Overlap\n\nA bounded overlap buffer carries recent paragraphs into the next chunk.","textPreview":"4. Overlap |  | A bounded overlap buffer carries recent paragraphs into the next chunk.","textChars":83,"textLines":3,"bbox":[942,230,250,250]}
+{"kind":"textbox","id":"sh/knih4byh","slide":7,"text":"Each chunk keeps metadata: documentTitle, chunkIndex, sourceType, tokenEstimate, embedding model, dimensions, and generated timestamp.","textPreview":"Each chunk keeps metadata: documentTitle, chunkIndex, sourceType, tokenEstimate, embedding model, dimensions, and generated timestamp.","textChars":134,"textLines":1,"bbox":[150,540,980,52]}
+{"kind":"notes","id":"nt/2iaqle","slide":7,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/d42r79","slide":8,"title":"Embeddings and vector storage","textShapes":28}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":8,"text":"Embeddings and vector storage","textPreview":"Embeddings and vector storage","textChars":29,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/1gvy90je","slide":8,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":8,"text":"The index turns chunk text into vectors that PostgreSQL can rank by distance.","textPreview":"The index turns chunk text into vectors that PostgreSQL can rank by distance.","textChars":77,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":8,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":8,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":8,"text":"Chunk text","textPreview":"Chunk text","textChars":10,"textLines":1,"bbox":[120,220,153.6,72]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":8,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[295.6,240,24,34]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":8,"text":"OpenAI\nembedding","textPreview":"OpenAI | embedding","textChars":16,"textLines":2,"bbox":[341.6,220,153.6,72]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":8,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[517.2,240,24,34]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":8,"text":"vector(1536)","textPreview":"vector(1536)","textChars":12,"textLines":1,"bbox":[563.2,220,153.6,72]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":8,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[738.8,240,24,34]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":8,"text":"HNSW\nindex","textPreview":"HNSW | index","textChars":10,"textLines":2,"bbox":[784.8,220,153.6,72]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":8,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[960.4,240,24,34]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":8,"text":"Cosine\nsearch","textPreview":"Cosine | search","textChars":13,"textLines":2,"bbox":[1006.4,220,153.6,72]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":8,"text":"Component","textPreview":"Component","textChars":9,"textLines":1,"bbox":[54,360,257.84,46]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":8,"text":"Implementation","textPreview":"Implementation","textChars":14,"textLines":1,"bbox":[311.84,360,468.8,46]}
+{"kind":"textbox","id":"sh/z61032ls","slide":8,"text":"Why it matters","textPreview":"Why it matters","textChars":14,"textLines":1,"bbox":[780.64,360,445.36,46]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":8,"text":"Embedding model","textPreview":"Embedding model","textChars":15,"textLines":1,"bbox":[54,406,257.84,46]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":8,"text":"text-embedding-3-small with configured dimensions.","textPreview":"text-embedding-3-small with configured dimensions.","textChars":50,"textLines":1,"bbox":[311.84,406,468.8,46]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":8,"text":"Consistent vector size for pgvector storage.","textPreview":"Consistent vector size for pgvector storage.","textChars":44,"textLines":1,"bbox":[780.64,406,445.36,46]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":8,"text":"Vector column","textPreview":"Vector column","textChars":13,"textLines":1,"bbox":[54,452,257.84,46]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":8,"text":"document_chunks.embedding vector(1536).","textPreview":"document_chunks.embedding vector(1536).","textChars":39,"textLines":1,"bbox":[311.84,452,468.8,46]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":8,"text":"Enables semantic similarity search.","textPreview":"Enables semantic similarity search.","textChars":35,"textLines":1,"bbox":[780.64,452,445.36,46]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":8,"text":"Indexes","textPreview":"Indexes","textChars":7,"textLines":1,"bbox":[54,498,257.84,46]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":8,"text":"HNSW vector index plus trigram text index.","textPreview":"HNSW vector index plus trigram text index.","textChars":42,"textLines":1,"bbox":[311.84,498,468.8,46]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":8,"text":"Supports fast semantic and keyword retrieval.","textPreview":"Supports fast semantic and keyword retrieval.","textChars":45,"textLines":1,"bbox":[780.64,498,445.36,46]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":8,"text":"Storage","textPreview":"Storage","textChars":7,"textLines":1,"bbox":[54,544,257.84,46]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":8,"text":"EF Core metadata plus parameterized SQL for vectors.","textPreview":"EF Core metadata plus parameterized SQL for vectors.","textChars":52,"textLines":1,"bbox":[311.84,544,468.8,46]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":8,"text":"Keeps relational data typed and vector writes safe.","textPreview":"Keeps relational data typed and vector writes safe.","textChars":51,"textLines":1,"bbox":[780.64,544,445.36,46]}
+{"kind":"notes","id":"nt/d42r79","slide":8,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/ve2s0u","slide":9,"title":"Search modes","textShapes":24}
+{"kind":"textbox","id":"sh/tcj6tova","slide":9,"text":"Search modes","textPreview":"Search modes","textChars":12,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/il0rqd4v","slide":9,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":9,"text":"The platform supports exact search, meaning search, and a balanced hybrid mode.","textPreview":"The platform supports exact search, meaning search, and a balanced hybrid mode.","textChars":79,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":9,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":9,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":9,"text":"Mode","textPreview":"Mode","textChars":4,"textLines":1,"bbox":[54,220,187.52,46]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":9,"text":"Best for","textPreview":"Best for","textChars":8,"textLines":1,"bbox":[241.52,220,328.16,46]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":9,"text":"How it works","textPreview":"How it works","textChars":12,"textLines":1,"bbox":[569.68,220,421.92,46]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":9,"text":"Returned signals","textPreview":"Returned signals","textChars":16,"textLines":1,"bbox":[991.6,220,234.4,46]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":9,"text":"Keyword","textPreview":"Keyword","textChars":7,"textLines":1,"bbox":[54,266,187.52,83.5]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":9,"text":"Exact names, APIs, database fields, tags.","textPreview":"Exact names, APIs, database fields, tags.","textChars":41,"textLines":1,"bbox":[241.52,266,328.16,83.5]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":9,"text":"Scores title, tags, summary, document content, and chunk text.","textPreview":"Scores title, tags, summary, document content, and chunk text.","textChars":62,"textLines":1,"bbox":[569.68,266,421.92,83.5]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":9,"text":"keywordScore, matchedFields, snippet","textPreview":"keywordScore, matchedFields, snippet","textChars":36,"textLines":1,"bbox":[991.6,266,234.4,83.5]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":9,"text":"Semantic","textPreview":"Semantic","textChars":8,"textLines":1,"bbox":[54,349.5,187.52,83.5]}
+{"kind":"textbox","id":"sh/83itgfml","slide":9,"text":"Questions that use different wording than the source.","textPreview":"Questions that use different wording than the source.","textChars":53,"textLines":1,"bbox":[241.52,349.5,328.16,83.5]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":9,"text":"Embeds the query and orders pgvector cosine distance with <=>.","textPreview":"Embeds the query and orders pgvector cosine distance with <=>.","textChars":62,"textLines":1,"bbox":[569.68,349.5,421.92,83.5]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":9,"text":"distance, vectorScore","textPreview":"distance, vectorScore","textChars":21,"textLines":1,"bbox":[991.6,349.5,234.4,83.5]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":9,"text":"Hybrid","textPreview":"Hybrid","textChars":6,"textLines":1,"bbox":[54,433,187.52,83.5]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":9,"text":"Default knowledge search and agent retrieval.","textPreview":"Default knowledge search and agent retrieval.","textChars":45,"textLines":1,"bbox":[241.52,433,328.16,83.5]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":9,"text":"Merges semantic and keyword candidates, then recalculates final score.","textPreview":"Merges semantic and keyword candidates, then recalculates final score.","textChars":70,"textLines":1,"bbox":[569.68,433,421.92,83.5]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":9,"text":"vector, keyword, recency, finalScore","textPreview":"vector, keyword, recency, finalScore","textChars":36,"textLines":1,"bbox":[991.6,433,234.4,83.5]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":9,"text":"Agent","textPreview":"Agent","textChars":5,"textLines":1,"bbox":[54,516.5,187.52,83.5]}
+{"kind":"textbox","id":"sh/bulwval8","slide":9,"text":"Grounded question answering over local content.","textPreview":"Grounded question answering over local content.","textChars":47,"textLines":1,"bbox":[241.52,516.5,328.16,83.5]}
+{"kind":"textbox","id":"sh/032lszqt","slide":9,"text":"Runs selected search mode, passes Top K chunks to the prompt.","textPreview":"Runs selected search mode, passes Top K chunks to the prompt.","textChars":61,"textLines":1,"bbox":[569.68,516.5,421.92,83.5]}
+{"kind":"textbox","id":"sh/tovahoza","slide":9,"text":"answer, citations, run steps","textPreview":"answer, citations, run steps","textChars":28,"textLines":1,"bbox":[991.6,516.5,234.4,83.5]}
+{"kind":"notes","id":"nt/ve2s0u","slide":9,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/fmg4od","slide":10,"title":"Keyword and semantic search mechanics","textShapes":8}
+{"kind":"textbox","id":"sh/1gvy90je","slide":10,"text":"Keyword and semantic search mechanics","textPreview":"Keyword and semantic search mechanics","textChars":37,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":10,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":10,"text":"Two retrieval paths expose different strengths before hybrid ranking combines them.","textPreview":"Two retrieval paths expose different strengths before hybrid ranking combines them.","textChars":83,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":10,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":10,"text":"Keyword search\n\nUses lexical weights across title (+5), tags (+4), summary (+3), chunk content (+2), and document content (+1). It is strongest when the query names exact technical terms.","textPreview":"Keyword search |  | Uses lexical weights across title (+5), tags (+4), summary (+3), chunk content (+2), and document content (+1). It is...","textChars":187,"textLines":3,"bbox":[54,220,552,300]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":10,"text":"Semantic search\n\nGenerates a query embedding, compares it to chunk vectors with pgvector cosine distance, and converts distance into a vector score. It is strongest when wording differs from the source.","textPreview":"Semantic search |  | Generates a query embedding, compares it to chunk vectors with pgvector cosine distance, and converts distance into ...","textChars":202,"textLines":3,"bbox":[674,220,552,300]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":10,"text":"Keyword = precise terms","textPreview":"Keyword = precise terms","textChars":23,"textLines":1,"bbox":[190,555,260,34]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":10,"text":"Semantic = meaning match","textPreview":"Semantic = meaning match","textChars":24,"textLines":1,"bbox":[820,555,280,34]}
+{"kind":"notes","id":"nt/fmg4od","slide":10,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/mo85l1","slide":11,"title":"Hybrid ranking and re-ranking","textShapes":6}
+{"kind":"textbox","id":"sh/ulwval87","slide":11,"text":"Hybrid ranking and re-ranking","textPreview":"Hybrid ranking and re-ranking","textChars":29,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":11,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":11,"text":"Hybrid search gathers candidates broadly, then ranks the strongest signal per chunk.","textPreview":"Hybrid search gathers candidates broadly, then ranks the strongest signal per chunk.","textChars":84,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":11,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":11,"text":"finalScore = 0.65 * vectorScore + 0.30 * keywordScoreNormalized + 0.05 * recencyScore","textPreview":"finalScore = 0.65 * vectorScore + 0.30 * keywordScoreNormalized + 0.05 * recencyScore","textChars":85,"textLines":1,"bbox":[54,190,1172,60]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":11,"text":"Re-ranking steps\n\n1. Run semantic at 2x limit.\n2. Run keyword at 2x limit.\n3. Group candidates by chunk id.\n4. Keep max vector and keyword signals.\n5. Add recency and sort by final score.","textPreview":"Re-ranking steps |  | 1. Run semantic at 2x limit. | 2. Run keyword at 2x limit. | 3. Group candidates by chunk id. | 4. Keep max vector ...","textChars":187,"textLines":7,"bbox":[690,300,460,250]}
+{"kind":"chart","id":"ch/4nap4r65","slide":11,"name":"","chartType":"bar","bbox":[90,300,500,250]}
+{"kind":"notes","id":"nt/mo85l1","slide":11,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/sujga7","slide":12,"title":"Grounded agent workflow","textShapes":17}
+{"kind":"textbox","id":"sh/vu9knih4","slide":12,"text":"Grounded agent workflow","textPreview":"Grounded agent workflow","textChars":23,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/kf6dcbul","slide":12,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/d0z61032","slide":12,"text":"The agent retrieves local chunks first; it does not train on the local database.","textPreview":"The agent retrieves local chunks first; it does not train on the local database.","textChars":80,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":12,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/knih4byh","slide":12,"text":"User\nquestion","textPreview":"User | question","textChars":13,"textLines":2,"bbox":[72,238,132.67,78]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":12,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[226.67,261,24,34]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":12,"text":"Selected\nsearch mode","textPreview":"Selected | search mode","textChars":20,"textLines":2,"bbox":[272.67,238,132.67,78]}
+{"kind":"textbox","id":"sh/val87ed8","slide":12,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[427.33,261,24,34]}
+{"kind":"textbox","id":"sh/judg7ads","slide":12,"text":"Top K\nchunks","textPreview":"Top K | chunks","textChars":12,"textLines":2,"bbox":[473.33,238,132.67,78]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":12,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[628,261,24,34]}
+{"kind":"textbox","id":"sh/1032lszq","slide":12,"text":"Grounded\nprompt","textPreview":"Grounded | prompt","textChars":15,"textLines":2,"bbox":[674,238,132.67,78]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":12,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[828.67,261,24,34]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":12,"text":"OpenAI\nanswer","textPreview":"OpenAI | answer","textChars":13,"textLines":2,"bbox":[874.67,238,132.67,78]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":12,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[1029.33,261,24,34]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":12,"text":"Citations\n+ steps","textPreview":"Citations | + steps","textChars":17,"textLines":2,"bbox":[1075.33,238,132.67,78]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":12,"text":"Prompt guardrails\n\nUse retrieved local context, say when context is insufficient, and do not invent citations.","textPreview":"Prompt guardrails |  | Use retrieved local context, say when context is insufficient, and do not invent citations.","textChars":110,"textLines":3,"bbox":[54,405,552,240]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":12,"text":"Inspectable output\n\nThe app stores retrieval duration, answer generation duration, citation count, answer text, and run steps.","textPreview":"Inspectable output |  | The app stores retrieval duration, answer generation duration, citation count, answer text, and run steps.","textChars":126,"textLines":3,"bbox":[674,405,552,240]}
+{"kind":"notes","id":"nt/sujga7","slide":12,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/dljhue","slide":13,"title":"Evaluation and quality loop","textShapes":27}
+{"kind":"textbox","id":"sh/ed8bat47","slide":13,"text":"Evaluation and quality loop","textPreview":"Evaluation and quality loop","textChars":27,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/l0rqd4vm","slide":13,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":13,"text":"Evaluation makes retrieval quality repeatable instead of anecdotal.","textPreview":"Evaluation makes retrieval quality repeatable instead of anecdotal.","textChars":67,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":13,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":13,"text":"Generate\nquestions","textPreview":"Generate | questions","textChars":18,"textLines":2,"bbox":[86,230,128,76]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":13,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[236,252,24,34]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":13,"text":"Run\nretrieval","textPreview":"Run | retrieval","textChars":13,"textLines":2,"bbox":[282,230,128,76]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":13,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[432,252,24,34]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":13,"text":"Score\nsources","textPreview":"Score | sources","textChars":13,"textLines":2,"bbox":[478,230,128,76]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":13,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[628,252,24,34]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":13,"text":"Inspect\nmisses","textPreview":"Inspect | misses","textChars":14,"textLines":2,"bbox":[674,230,128,76]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":13,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[824,252,24,34]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":13,"text":"Tune\nranking","textPreview":"Tune | ranking","textChars":12,"textLines":2,"bbox":[870,230,128,76]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":13,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[1020,252,24,34]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":13,"text":"Report\nscore","textPreview":"Report | score","textChars":12,"textLines":2,"bbox":[1066,230,128,76]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":13,"text":"Evaluation signal","textPreview":"Evaluation signal","textChars":17,"textLines":1,"bbox":[54,395,293,46]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":13,"text":"How it is computed","textPreview":"How it is computed","textChars":18,"textLines":1,"bbox":[347,395,468.8,46]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":13,"text":"Why it helps","textPreview":"Why it helps","textChars":12,"textLines":1,"bbox":[815.8,395,410.2,46]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":13,"text":"Expected documents","textPreview":"Expected documents","textChars":18,"textLines":1,"bbox":[54,441,293,48]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":13,"text":"Checks whether known source titles appear in top results.","textPreview":"Checks whether known source titles appear in top results.","textChars":57,"textLines":1,"bbox":[347,441,468.8,48]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":13,"text":"Measures retrieval correctness.","textPreview":"Measures retrieval correctness.","textChars":31,"textLines":1,"bbox":[815.8,441,410.2,48]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":13,"text":"Expected keywords","textPreview":"Expected keywords","textChars":17,"textLines":1,"bbox":[54,489,293,48]}
+{"kind":"textbox","id":"sh/lwval87e","slide":13,"text":"Compares retrieved titles, snippets, and matched fields.","textPreview":"Compares retrieved titles, snippets, and matched fields.","textChars":56,"textLines":1,"bbox":[347,489,468.8,48]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":13,"text":"Shows what relevant terms were covered.","textPreview":"Shows what relevant terms were covered.","textChars":39,"textLines":1,"bbox":[815.8,489,410.2,48]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":13,"text":"Failed cases","textPreview":"Failed cases","textChars":12,"textLines":1,"bbox":[54,537,293,48]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":13,"text":"Stores missing documents and top retrieved chunks.","textPreview":"Stores missing documents and top retrieved chunks.","textChars":50,"textLines":1,"bbox":[347,537,468.8,48]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":13,"text":"Guides chunk-size, overlap, and scoring changes.","textPreview":"Guides chunk-size, overlap, and scoring changes.","textChars":48,"textLines":1,"bbox":[815.8,537,410.2,48]}
+{"kind":"notes","id":"nt/dljhue","slide":13,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/9s7hty","slide":14,"title":".NET 9 and .NET 10 features used","textShapes":28}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":14,"text":".NET 9 and .NET 10 features used","textPreview":".NET 9 and .NET 10 features used","textChars":32,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/lszqtcj6","slide":14,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":14,"text":"Platform features are applied where they improve safety, compatibility, or operational quality.","textPreview":"Platform features are applied where they improve safety, compatibility, or operational quality.","textChars":95,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":14,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":14,"text":"Version","textPreview":"Version","textChars":7,"textLines":1,"bbox":[54,220,187.52,46]}
+{"kind":"textbox","id":"sh/sji5snel","slide":14,"text":"Feature used or inherited","textPreview":"Feature used or inherited","textChars":25,"textLines":1,"bbox":[241.52,220,316.44,46]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":14,"text":"Where in this project","textPreview":"Where in this project","textChars":21,"textLines":1,"bbox":[557.96,220,316.44,46]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":14,"text":"Improvement","textPreview":"Improvement","textChars":11,"textLines":1,"bbox":[874.4,220,351.6,46]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":14,"text":".NET 10","textPreview":".NET 10","textChars":7,"textLines":1,"bbox":[54,266,187.52,60.8]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":14,"text":"net10.0 target framework","textPreview":"net10.0 target framework","textChars":24,"textLines":1,"bbox":[241.52,266,316.44,60.8]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":14,"text":"All backend projects","textPreview":"All backend projects","textChars":20,"textLines":1,"bbox":[557.96,266,316.44,60.8]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":14,"text":"Uses .NET 10 LTS runtime, SDK, libraries, and ASP.NET Core stack.","textPreview":"Uses .NET 10 LTS runtime, SDK, libraries, and ASP.NET Core stack.","textChars":65,"textLines":1,"bbox":[874.4,266,351.6,60.8]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":14,"text":".NET 10","textPreview":".NET 10","textChars":7,"textLines":1,"bbox":[54,326.8,187.52,60.8]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":14,"text":"JSON duplicate-property rejection","textPreview":"JSON duplicate-property rejection","textChars":33,"textLines":1,"bbox":[241.52,326.8,316.44,60.8]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":14,"text":"Program.cs JSON options","textPreview":"Program.cs JSON options","textChars":23,"textLines":1,"bbox":[557.96,326.8,316.44,60.8]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":14,"text":"Rejects ambiguous request payloads.","textPreview":"Rejects ambiguous request payloads.","textChars":35,"textLines":1,"bbox":[874.4,326.8,351.6,60.8]}
+{"kind":"textbox","id":"sh/032lszqt","slide":14,"text":".NET 10","textPreview":".NET 10","textChars":7,"textLines":1,"bbox":[54,387.6,187.52,60.8]}
+{"kind":"textbox","id":"sh/tovahoza","slide":14,"text":"ASP.NET Core 10 package line","textPreview":"ASP.NET Core 10 package line","textChars":28,"textLines":1,"bbox":[241.52,387.6,316.44,60.8]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":14,"text":"Auth, OpenAPI, hosting","textPreview":"Auth, OpenAPI, hosting","textChars":22,"textLines":1,"bbox":[557.96,387.6,316.44,60.8]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":14,"text":"Keeps API infrastructure aligned with the target runtime.","textPreview":"Keeps API infrastructure aligned with the target runtime.","textChars":57,"textLines":1,"bbox":[874.4,387.6,351.6,60.8]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":14,"text":".NET 9+","textPreview":".NET 9+","textChars":7,"textLines":1,"bbox":[54,448.4,187.52,60.8]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":14,"text":"Built-in OpenAPI generation","textPreview":"Built-in OpenAPI generation","textChars":27,"textLines":1,"bbox":[241.52,448.4,316.44,60.8]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":14,"text":"AddOpenApi and MapOpenApi","textPreview":"AddOpenApi and MapOpenApi","textChars":25,"textLines":1,"bbox":[557.96,448.4,316.44,60.8]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":14,"text":"Exposes first-party OpenAPI JSON alongside Swagger UI.","textPreview":"Exposes first-party OpenAPI JSON alongside Swagger UI.","textChars":54,"textLines":1,"bbox":[874.4,448.4,351.6,60.8]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":14,"text":".NET 9+","textPreview":".NET 9+","textChars":7,"textLines":1,"bbox":[54,509.2,187.52,60.8]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":14,"text":"Runtime, SDK, performance updates","textPreview":"Runtime, SDK, performance updates","textChars":33,"textLines":1,"bbox":[241.52,509.2,316.44,60.8]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":14,"text":"Inherited through net10.0","textPreview":"Inherited through net10.0","textChars":25,"textLines":1,"bbox":[557.96,509.2,316.44,60.8]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":14,"text":"Benefits from later JIT, GC, tooling, and library improvements.","textPreview":"Benefits from later JIT, GC, tooling, and library improvements.","textChars":63,"textLines":1,"bbox":[874.4,509.2,351.6,60.8]}
+{"kind":"notes","id":"nt/9s7hty","slide":14,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/d7db1f","slide":15,"title":"C# 13 and C# 14 features used","textShapes":28}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":15,"text":"C# 13 and C# 14 features used","textPreview":"C# 13 and C# 14 features used","textChars":29,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":15,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":15,"text":"Language features are conservative and tied to readability or correctness.","textPreview":"Language features are conservative and tied to readability or correctness.","textChars":74,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":15,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/61032lsz","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":15,"text":"Version","textPreview":"Version","textChars":7,"textLines":1,"bbox":[54,220,187.52,46]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":15,"text":"Feature","textPreview":"Feature","textChars":7,"textLines":1,"bbox":[241.52,220,304.72,46]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":15,"text":"Where used","textPreview":"Where used","textChars":10,"textLines":1,"bbox":[546.24,220,351.6,46]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":15,"text":"Improvement","textPreview":"Improvement","textChars":11,"textLines":1,"bbox":[897.84,220,328.16,46]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":15,"text":"C# 14","textPreview":"C# 14","textChars":5,"textLines":1,"bbox":[54,266,187.52,60.8]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":15,"text":"field-backed properties","textPreview":"field-backed properties","textChars":23,"textLines":1,"bbox":[241.52,266,304.72,60.8]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":15,"text":"JwtOptions, OpenAiOptions, ChunkingOptions, SearchOptions","textPreview":"JwtOptions, OpenAiOptions, ChunkingOptions, SearchOptions","textChars":57,"textLines":1,"bbox":[546.24,266,351.6,60.8]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":15,"text":"Validation and normalization without hand-written backing fields.","textPreview":"Validation and normalization without hand-written backing fields.","textChars":65,"textLines":1,"bbox":[897.84,266,328.16,60.8]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":15,"text":"C# 13","textPreview":"C# 13","textChars":5,"textLines":1,"bbox":[54,326.8,187.52,60.8]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":15,"text":"System.Threading.Lock","textPreview":"System.Threading.Lock","textChars":21,"textLines":1,"bbox":[241.52,326.8,304.72,60.8]}
+{"kind":"textbox","id":"sh/ulwval87","slide":15,"text":"RuntimeSettings","textPreview":"RuntimeSettings","textChars":15,"textLines":1,"bbox":[546.24,326.8,351.6,60.8]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":15,"text":"Modern lock semantics for synchronized runtime settings.","textPreview":"Modern lock semantics for synchronized runtime settings.","textChars":56,"textLines":1,"bbox":[897.84,326.8,328.16,60.8]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":15,"text":"C# 13","textPreview":"C# 13","textChars":5,"textLines":1,"bbox":[54,387.6,187.52,60.8]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":15,"text":"params ReadOnlySpan<string>","textPreview":"params ReadOnlySpan<string>","textChars":27,"textLines":1,"bbox":[241.52,387.6,304.72,60.8]}
+{"kind":"textbox","id":"sh/1032lszq","slide":15,"text":"ValidationFailureException.For","textPreview":"ValidationFailureException.For","textChars":30,"textLines":1,"bbox":[546.24,387.6,351.6,60.8]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":15,"text":"Concise validation error construction without array noise.","textPreview":"Concise validation error construction without array noise.","textChars":58,"textLines":1,"bbox":[897.84,387.6,328.16,60.8]}
+{"kind":"textbox","id":"sh/judg7ads","slide":15,"text":"Modern C#","textPreview":"Modern C#","textChars":9,"textLines":1,"bbox":[54,448.4,187.52,60.8]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":15,"text":"Records and primary constructors","textPreview":"Records and primary constructors","textChars":32,"textLines":1,"bbox":[241.52,448.4,304.72,60.8]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":15,"text":"Contracts, services, repositories, clients","textPreview":"Contracts, services, repositories, clients","textChars":42,"textLines":1,"bbox":[546.24,448.4,351.6,60.8]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":15,"text":"Less boilerplate while keeping dependencies explicit.","textPreview":"Less boilerplate while keeping dependencies explicit.","textChars":53,"textLines":1,"bbox":[897.84,448.4,328.16,60.8]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":15,"text":"Modern C#","textPreview":"Modern C#","textChars":9,"textLines":1,"bbox":[54,509.2,187.52,60.8]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":15,"text":"Collection expressions and nullable refs","textPreview":"Collection expressions and nullable refs","textChars":40,"textLines":1,"bbox":[241.52,509.2,304.72,60.8]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":15,"text":"Domain, validators, tests","textPreview":"Domain, validators, tests","textChars":25,"textLines":1,"bbox":[546.24,509.2,351.6,60.8]}
+{"kind":"textbox","id":"sh/cvixczed","slide":15,"text":"Readable collection setup and safer null contracts.","textPreview":"Readable collection setup and safer null contracts.","textChars":51,"textLines":1,"bbox":[897.84,509.2,328.16,60.8]}
+{"kind":"notes","id":"nt/d7db1f","slide":15,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}
+{"kind":"slide","id":"sl/svupgy","slide":16,"title":"Demo runbook and closing summary","textShapes":25}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":16,"text":"Demo runbook and closing summary","textPreview":"Demo runbook and closing summary","textChars":32,"textLines":1,"bbox":[54,42,820,54]}
+{"kind":"shape","id":"sh/donyd0z6","slide":16,"bbox":[54,104,112,4]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":16,"text":"A short path to validate the complete application locally.","textPreview":"A short path to validate the complete application locally.","textChars":58,"textLines":1,"bbox":[54,122,1000,52]}
+{"kind":"textbox","id":"sh/val87ed8","slide":16,"text":"Local Knowledge Intelligence","textPreview":"Local Knowledge Intelligence","textChars":28,"textLines":1,"bbox":[54,672,380,18]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1168,672,58,18]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":16,"text":"Set .env","textPreview":"Set .env","textChars":8,"textLines":1,"bbox":[72,230,132.67,78]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":16,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[226.67,253,24,34]}
+{"kind":"textbox","id":"sh/v6psfil0","slide":16,"text":"docker compose\nup --build","textPreview":"docker compose | up --build","textChars":25,"textLines":2,"bbox":[272.67,230,132.67,78]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":16,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[427.33,253,24,34]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":16,"text":"Login\nadmin/admin","textPreview":"Login | admin/admin","textChars":17,"textLines":2,"bbox":[473.33,230,132.67,78]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":16,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[628,253,24,34]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":16,"text":"Upload or\ncreate docs","textPreview":"Upload or | create docs","textChars":21,"textLines":2,"bbox":[674,230,132.67,78]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":16,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[828.67,253,24,34]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":16,"text":"Re-index","textPreview":"Re-index","textChars":8,"textLines":1,"bbox":[874.67,230,132.67,78]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":16,"text":">","textPreview":">","textChars":1,"textLines":1,"bbox":[1029.33,253,24,34]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":16,"text":"Search,\nask, evaluate","textPreview":"Search, | ask, evaluate","textChars":21,"textLines":2,"bbox":[1075.33,230,132.67,78]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":16,"text":"Area","textPreview":"Area","textChars":4,"textLines":1,"bbox":[100,395,237.6,46]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":16,"text":"What to show in a demo","textPreview":"What to show in a demo","textChars":22,"textLines":1,"bbox":[337.6,395,842.4,46]}
+{"kind":"textbox","id":"sh/lwval87e","slide":16,"text":"Documents","textPreview":"Documents","textChars":9,"textLines":1,"bbox":[100,441,237.6,41]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":16,"text":"Upload a Markdown/text file, save and embed, then open the detail page and inspect chunks.","textPreview":"Upload a Markdown/text file, save and embed, then open the detail page and inspect chunks.","textChars":90,"textLines":1,"bbox":[337.6,441,842.4,41]}
+{"kind":"textbox","id":"sh/0z61032l","slide":16,"text":"Search","textPreview":"Search","textChars":6,"textLines":1,"bbox":[100,482,237.6,41]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":16,"text":"Run keyword, semantic, and hybrid queries and compare score signals.","textPreview":"Run keyword, semantic, and hybrid queries and compare score signals.","textChars":68,"textLines":1,"bbox":[337.6,482,842.4,41]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":16,"text":"Agent","textPreview":"Agent","textChars":5,"textLines":1,"bbox":[100,523,237.6,41]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":16,"text":"Ask a question and inspect citations plus run steps.","textPreview":"Ask a question and inspect citations plus run steps.","textChars":52,"textLines":1,"bbox":[337.6,523,842.4,41]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":16,"text":"Evaluation","textPreview":"Evaluation","textChars":10,"textLines":1,"bbox":[100,564,237.6,41]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":16,"text":"Run evaluation after changing chunking or ranking settings to check retrieval quality.","textPreview":"Run evaluation after changing chunking or ranking settings to check retrieval quality.","textChars":86,"textLines":1,"bbox":[337.6,564,842.4,41]}
+{"kind":"notes","id":"nt/svupgy","slide":16,"text":"Sources: repository README/docs/code; Microsoft Learn: What's new in .NET 9, What's new in .NET 10, What's new in C# 13, What's new in C# 14."}

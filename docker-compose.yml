@@ -1,0 +1,44 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: lki-postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-lki}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-lki}
+      POSTGRES_DB: ${POSTGRES_DB:-lki}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - lki_postgres_data:/var/lib/postgresql/data
+      - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: src/LocalKnowledgeIntelligence.Api/Dockerfile
+    container_name: lki-backend
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__Postgres: Host=postgres;Port=5432;Database=${POSTGRES_DB:-lki};Username=${POSTGRES_USER:-lki};Password=${POSTGRES_PASSWORD:-lki}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      JWT_SIGNING_KEY: ${JWT_SIGNING_KEY:-local-dev-signing-key-change-me}
+    ports:
+      - "5000:8080"
+    depends_on:
+      - postgres
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: lki-frontend
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: ${NEXT_PUBLIC_API_BASE_URL:-http://localhost:5000}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  lki_postgres_data:

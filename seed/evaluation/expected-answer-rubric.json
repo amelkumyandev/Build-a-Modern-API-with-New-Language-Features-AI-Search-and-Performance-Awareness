@@ -1,0 +1,8 @@
+{
+  "criteria": [
+    "Answer uses retrieved local context.",
+    "Answer includes citations from real chunks.",
+    "Answer admits when context is insufficient.",
+    "Answer avoids claiming OpenAI was trained on the local database."
+  ]
+}
