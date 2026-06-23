@@ -10,3 +10,4 @@ frontend/out/
 *.user
 *.db
 *.log
+AGENTS.md
